@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Student Budget</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_budget">Budget</string>
+    <string name="menu_expenses">Expenses</string>
+    <string name="menu_categories">Categories</string>
+    <string name="menu_term_dates">Term Dates</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tab_text_1">Week</string>
+    <string name="tab_text_2">Month</string>
+    <string name="tab_text_3">Term</string>
+
+    <string name="edit_budget_button">Edit My Budget</string>
+
+    <string name="budget_heading">Budget</string>
+    <string name="savings_heading">Savings</string>
+
+    <string name="hint_weekly_budget">Weekly Budget (£)</string>
+    <string name="hint_monthly_budget">Monthly Budget (£)</string>
+    <string name="hint_termly_budget">Termly Budget (£)</string>
+    <string name="hint_weekly_savings">Weekly Savings (£)</string>
+    <string name="hint_monthly_savings">Monthly Savings (£)</string>
+    <string name="hint_termly_savings">Termly Savings (£)</string>
+
+    <string name="edit_budget_heading">Edit Budget</string>
+    <string name="plus_button">+</string>
+    <string name="minus_button">-</string>
+    <string name="save_button">Save</string>
+    <string name="synchronise_button">Sync</string>
+
+
+    <string name="term_one_text">Autumn term</string>
+    <string name="term_two_text">Spring term</string>
+    <string name="term_three_text">Summer term</string>
+    <string name="term_start_date">Start</string>
+    <string name="term_end_date">End</string>
+    <string name="to_text">to</string>
+
+    <string name="edit_term_dates">Edit</string>
+    <string name="add_term_button_text">Set Term Dates</string>
+    <string name="edit_term_date_heading">Edit Term Dates</string>
+
+    <string name="set_term_dates_heading">Set Term Dates</string>
+
+    <string name="next_button">Next</string>
+    <string name="previous_button">Previous</string>
+
+</resources>

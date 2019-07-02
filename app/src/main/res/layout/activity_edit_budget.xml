@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EditBudgetActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/weekTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tab_text_1"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editBudgetHeadingTextView"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/weekBudgetTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/budget_heading"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/weekTextView"
+            app:layout_constraintTop_toBottomOf="@+id/weekTextView" />
+
+        <TextView
+            android:id="@+id/weekSavingsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/savings_heading"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/weekBudgetTextView"
+            app:layout_constraintTop_toBottomOf="@+id/weekBudgetTextView" />
+
+        <EditText
+            android:id="@+id/weekBudgetEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:hint="@string/hint_weekly_budget"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/weekBudgetTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/weekBudgetTextView"
+            app:layout_constraintTop_toTopOf="@+id/weekBudgetTextView" />
+
+        <TextView
+            android:id="@+id/weekSavingsPercentageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/weekSavingsValueEditText"
+            app:layout_constraintEnd_toEndOf="@+id/weekBudgetEditText"
+            app:layout_constraintTop_toTopOf="@+id/weekSavingsValueEditText" />
+
+        <EditText
+            android:id="@+id/weekSavingsValueEditText"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_weekly_savings"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/weekSavingsTextView"
+            app:layout_constraintStart_toStartOf="@+id/weekBudgetEditText"
+            app:layout_constraintTop_toTopOf="@+id/weekSavingsTextView" />
+
+        <Button
+            android:id="@+id/weekSyncButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/synchronise_button"
+            app:layout_constraintStart_toStartOf="@+id/weekTextView"
+            app:layout_constraintTop_toBottomOf="@+id/weekSavingsTextView" />
+
+        <View
+            android:layout_width="@dimen/wide_button"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/monthTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weekSyncButton" />
+
+        <TextView
+            android:id="@+id/monthTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108dp"
+            android:text="@string/tab_text_2"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/weekTextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/weekTextView"
+            app:layout_constraintTop_toBottomOf="@+id/weekSavingsTextView" />
+
+        <TextView
+            android:id="@+id/monthBudgetTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/budget_heading"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/monthTextView"
+            app:layout_constraintTop_toBottomOf="@+id/monthTextView" />
+
+        <TextView
+            android:id="@+id/monthSavingsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/savings_heading"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/monthBudgetTextView"
+            app:layout_constraintTop_toBottomOf="@+id/monthBudgetTextView" />
+
+        <EditText
+            android:id="@+id/monthBudgetEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:hint="@string/hint_monthly_budget"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/monthBudgetTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/monthBudgetTextView"
+            app:layout_constraintTop_toTopOf="@+id/monthBudgetTextView" />
+
+        <TextView
+            android:id="@+id/monthSavingsPercentageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.5%"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/monthSavingsValueEditText"
+            app:layout_constraintEnd_toEndOf="@+id/monthBudgetEditText"
+            app:layout_constraintTop_toTopOf="@+id/monthSavingsValueEditText" />
+
+        <EditText
+            android:id="@+id/monthSavingsValueEditText"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_monthly_savings"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/monthSavingsTextView"
+            app:layout_constraintStart_toStartOf="@+id/monthBudgetEditText"
+            app:layout_constraintTop_toTopOf="@+id/monthSavingsTextView" />
+
+        <Button
+            android:id="@+id/monthSyncButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/synchronise_button"
+            app:layout_constraintStart_toStartOf="@+id/monthTextView"
+            app:layout_constraintTop_toBottomOf="@+id/monthSavingsTextView" />
+
+        <View
+            android:layout_width="@dimen/wide_button"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/termTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/monthSyncButton" />
+
+        <TextView
+            android:id="@+id/termTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108dp"
+            android:text="@string/tab_text_3"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/monthTextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/monthTextView"
+            app:layout_constraintTop_toBottomOf="@+id/monthSavingsTextView" />
+
+        <TextView
+            android:id="@+id/termBudgetTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/budget_heading"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/termTextView"
+            app:layout_constraintTop_toBottomOf="@+id/termTextView" />
+
+        <TextView
+            android:id="@+id/termSavingsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/savings_heading"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/termBudgetTextView"
+            app:layout_constraintTop_toBottomOf="@+id/termBudgetTextView" />
+
+        <EditText
+            android:id="@+id/termBudgetEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:hint="@string/hint_termly_budget"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/termBudgetTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/termBudgetTextView"
+            app:layout_constraintTop_toTopOf="@+id/termBudgetTextView" />
+
+        <TextView
+            android:id="@+id/termSavingsPercentageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.5%"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/termSavingsValueEditText"
+            app:layout_constraintEnd_toEndOf="@+id/termBudgetEditText"
+            app:layout_constraintTop_toTopOf="@+id/termSavingsValueEditText" />
+
+        <EditText
+            android:id="@+id/termSavingsValueEditText"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_termly_savings"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/termSavingsTextView"
+            app:layout_constraintStart_toStartOf="@+id/termBudgetEditText"
+            app:layout_constraintTop_toTopOf="@+id/termSavingsTextView" />
+
+        <Button
+            android:id="@+id/termSyncButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/synchronise_button"
+            app:layout_constraintStart_toStartOf="@+id/termTextView"
+            app:layout_constraintTop_toBottomOf="@+id/termSavingsTextView" />
+
+        <View
+            android:layout_width="@dimen/wide_button"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/saveBudgetButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/termSyncButton" />
+
+        <Button
+            android:id="@+id/saveBudgetButton"
+            android:layout_width="@dimen/wide_button"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/save_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/termSavingsTextView" />
+
+        <TextView
+            android:id="@+id/editBudgetHeadingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/edit_budget_heading"
+            android:textAllCaps="true"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

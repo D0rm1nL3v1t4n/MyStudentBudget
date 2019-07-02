@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#216ae0</color>
+    <color name="colorPrimaryDark">#0747af</color>
+    <color name="colorAccent">#9507af</color>
+
+    <color name="weekBudgetPBarColour">#ed811c</color>
+    <color name="monthBudgetPBarColour">#4b1eed</color>
+    <color name="termBudgetPBarColour">#11a004</color>
+    <color name="savingsProgressBarColour">#f4021a</color>
+</resources>

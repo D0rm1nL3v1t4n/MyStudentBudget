@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FragmentTermDates">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/springEndDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/springToTextView"
+                app:layout_constraintStart_toEndOf="@+id/springToTextView"
+                app:layout_constraintTop_toTopOf="@+id/springToTextView" />
+
+            <TextView
+                android:id="@+id/summerEndDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/springToTextView2"
+                app:layout_constraintStart_toEndOf="@+id/springToTextView2"
+                app:layout_constraintTop_toTopOf="@+id/springToTextView2" />
+
+            <TextView
+                android:id="@+id/springToTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/to_text"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/springStartDateTextView"
+                app:layout_constraintStart_toEndOf="@+id/springStartDateTextView"
+                app:layout_constraintTop_toTopOf="@+id/springStartDateTextView"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/springToTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/to_text"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/summerStartDateTextView"
+                app:layout_constraintStart_toEndOf="@+id/summerStartDateTextView"
+                app:layout_constraintTop_toTopOf="@+id/summerStartDateTextView" />
+
+            <TextView
+                android:id="@+id/springStartDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/springTermTextView"
+                app:layout_constraintTop_toBottomOf="@+id/springTermTextView" />
+
+            <TextView
+                android:id="@+id/summerStartDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/summerTermTextView"
+                app:layout_constraintTop_toBottomOf="@+id/summerTermTextView" />
+
+            <TextView
+                android:id="@+id/springTermTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/term_two_text"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/autumnTermTextView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/autumnTermTextView"
+                app:layout_constraintTop_toBottomOf="@+id/dividerView1" />
+
+            <TextView
+                android:id="@+id/summerTermTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/term_three_text"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/springTermTextView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/springTermTextView"
+                app:layout_constraintTop_toBottomOf="@+id/dividerView2" />
+
+            <TextView
+                android:id="@+id/termDatesHeadingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/menu_term_dates"
+                android:textAllCaps="true"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/dividerView1"
+                android:layout_width="@dimen/wide_button"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/autumnEndDateTextView" />
+
+            <TextView
+                android:id="@+id/autumnTermTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/term_one_text"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/termDatesHeadingTextView" />
+
+            <TextView
+                android:id="@+id/autumnStartDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/autumnTermTextView"
+                app:layout_constraintTop_toBottomOf="@+id/autumnTermTextView" />
+
+            <TextView
+                android:id="@+id/autumnEndDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/autumnToTextView"
+                app:layout_constraintStart_toEndOf="@+id/autumnToTextView"
+                app:layout_constraintTop_toTopOf="@+id/autumnToTextView" />
+
+            <TextView
+                android:id="@+id/autumnToTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/to_text"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/autumnStartDateTextView"
+                app:layout_constraintStart_toEndOf="@+id/autumnStartDateTextView"
+                app:layout_constraintTop_toTopOf="@+id/autumnStartDateTextView" />
+
+            <Button
+                android:id="@+id/editAutumnTermDatesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/edit_term_dates"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/autumnEndDateTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/autumnEndDateTextView"
+                app:layout_constraintTop_toTopOf="@+id/autumnEndDateTextView" />
+
+            <Button
+                android:id="@+id/editSpringTermDatesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_term_dates"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/springEndDateTextView"
+                app:layout_constraintEnd_toEndOf="@+id/editAutumnTermDatesButton"
+                app:layout_constraintStart_toStartOf="@+id/editAutumnTermDatesButton"
+                app:layout_constraintTop_toTopOf="@+id/springEndDateTextView" />
+
+            <Button
+                android:id="@+id/editSummerTermDatesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_term_dates"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/summerEndDateTextView"
+                app:layout_constraintEnd_toEndOf="@+id/editSpringTermDatesButton"
+                app:layout_constraintStart_toStartOf="@+id/editSpringTermDatesButton"
+                app:layout_constraintTop_toTopOf="@+id/summerEndDateTextView" />
+
+            <View
+                android:id="@+id/dividerView2"
+                android:layout_width="@dimen/wide_button"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/springStartDateTextView" />
+
+            <Button
+                android:id="@+id/nextYearDatesButton"
+                android:layout_width="@dimen/wide_button"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/add_term_button_text"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.533"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dividerView3" />
+
+            <View
+                android:id="@+id/dividerView3"
+                android:layout_width="@dimen/wide_button"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/summerStartDateTextView" />
+
+            <TextView
+                android:id="@+id/autumnMessageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/autumnTermTextView"
+                app:layout_constraintEnd_toEndOf="@+id/editAutumnTermDatesButton"
+                app:layout_constraintStart_toStartOf="@+id/editAutumnTermDatesButton"
+                app:layout_constraintTop_toTopOf="@+id/autumnTermTextView" />
+
+            <TextView
+                android:id="@+id/springMessageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/springTermTextView"
+                app:layout_constraintEnd_toEndOf="@+id/editSpringTermDatesButton"
+                app:layout_constraintStart_toStartOf="@+id/editSpringTermDatesButton"
+                app:layout_constraintTop_toTopOf="@+id/springTermTextView" />
+
+            <TextView
+                android:id="@+id/summerMessageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/summerTermTextView"
+                app:layout_constraintEnd_toEndOf="@+id/editSummerTermDatesButton"
+                app:layout_constraintStart_toStartOf="@+id/editSummerTermDatesButton"
+                app:layout_constraintTop_toTopOf="@+id/summerTermTextView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
